@@ -183,7 +183,7 @@
     </style>
 </head>
  
-<body style="background: linear-gradient(#91a5d8 0%, #e6e6e0 10%, #a9b0cd 90%, #7d7cb9 100%); ">
+<body oncontextmenu="return false;" style="background: linear-gradient(#91a5d8 0%, #e6e6e0 10%, #a9b0cd 90%, #7d7cb9 100%); ">
      <center><br><div style="font-size:110px;background-color:white;font-family:Fantasy;width:100%;border-radius:100px;border:2px solid black"> <a style="color:red">S</a><a style="color:yellow">n</a><a style="color:green">o</a><a style="color:brown">o</a><a style="color:blue">k</a><a style="color:pink">e</a><a style="color:black">r</a>  Shuffle</div>
 <br><br>
 <div class="container">	     
@@ -225,6 +225,25 @@
     <footer id="footer" style="margin-top:10%;" onclick="dot()">Made with &hearts; By Pratik Sutar <br>Pratikdaz1997@gmail.com</footer>
 
     <script>
+	    
+	document.onkeydown = function(e) {
+		if(event.keyCode == 123) {
+			return false;
+		}
+		if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+			return false;
+		}
+		if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+			return false;
+		}
+		if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+			return false;
+		}
+		if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+			return false;
+		}
+	}   
+	    	
 	let text = "Total width/height: " + screen.width + "*" + screen.height + "<br>" +
         "Available width/height: " + screen.availWidth + "*" + screen.availHeight ;
         // document.getElementById("demo").innerHTML = text;
