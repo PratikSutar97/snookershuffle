@@ -222,10 +222,18 @@
     <img id="reset" hidden onclick="reset()" src="https://th.bing.com/th/id/R.6579de5bd04678eb19eb5a5ddca8b8b8?rik=PmRIdNaZZBFYrA&riu=http%3a%2f%2fwww.clker.com%2fcliparts%2f1%2fV%2fQ%2fQ%2fk%2f4%2freset-button-blue-md.png&ehk=JvNENdItyAykZcMZpgnRH8Pl4lq7skWH0EYCWQF3IvE%3d&risl=&pid=ImgRaw&r=0" style="float:right;width:330px;height:170px"></img>
   </div>
    
-    <footer style="margin-top:10%;" onclick="dot()">Made with &hearts; By Pratik Sutar <br>Pratikdaz1997@gmail.com</footer>
+    <footer id="footer" style="margin-top:10%;" onclick="dot()">Made with &hearts; By Pratik Sutar <br>Pratikdaz1997@gmail.com</footer>
 
     <script>
-  var counter = 3;
+	let text = "Total width/height: " + screen.width + "*" + screen.height + "<br>" +
+        "Available width/height: " + screen.availWidth + "*" + screen.availHeight ;
+        // document.getElementById("demo").innerHTML = text;
+        let hgt=parseInt(screen.height);
+        let hgt1=900;
+        var element = document.getElementById("footer");
+        element.style.marginTop =hgt-hgt1+"px" ;
+	    
+  	var counter = 3;
         // Function to shuffle the array content
         
         document.getElementById('circle').setAttribute('style','height: 300px;width: 300px;background: linear-gradient(#ffffff 0%, #ebebe7 10%, #d7d9d6 50%, #c6c6c3 100%);  border-radius: 50%;  display: flex;  justify-content: center;  align-items: center;  position: relative;')
