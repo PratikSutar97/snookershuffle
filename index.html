@@ -1,43 +1,33 @@
 <!DOCTYPE html>
-<html>
- 
-<head>
-    
-    <title>Snooker Shuffle</title>
-    <style>
 
-      body{
-        text-align:center;
-        display:flex;
-        flex-direction:column;
-        min-height:100vh;
-      }
+<HTML>
+    <title>
+        Snooker Shuffle
+    </title>
+    <head>
+        <style>
+            body{
+                font-family:monospace;
+                font-size: 2rem;
+                text-align:center;
+                display:flex;
+                flex-direction:column;
+                min-height:100vh;
+                background: linear-gradient(#91a5d8 0%, #e6e6e0 10%, #a9b0cd 90%, #7d7cb9 100%);
+            }
 
-      footer{
-	      position: absolute;
-	      bottom :100px;
-        padding:15px;
-        background:rgb(74, 80, 87);
-        color:#fff;
-        font-size: 30px;
-        border-radius: 50%;
-        margin-bottom: 20px;
-	      width:100%;
-        
-      }
-
-      #circles{
-        animation-name: jump;
-      animation-duration: 1s;
-      animation-iteration-count: infinite;
-      animation-timing-function: linear;
-      }
-      #circles1{
-        animation-name: jump;
-      animation-duration: 0.6s;
-      animation-iteration-count: infinite;
-      animation-timing-function: linear;
-      }
+        #circles{
+            animation-name: jump;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+        #circles1{
+            animation-name: jump;
+            animation-duration: 0.6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
       #circles2{
         animation-name: jump;
       animation-duration: 2.7s;
@@ -101,8 +91,6 @@
             transform: scale(0.85);
             box-shadow: 3px 2px 25px 1px ;
         }
-
- 
 
 
 .circle::after{
@@ -181,88 +169,32 @@
   z-index: -1;
   filter: blur(10px);
 }
-.container{
-	display:flex;
-	justify-content:center;
-}
 
+footer{
+        position: absolute;
+        color:#333030;
+        font-size: 2rem;
+        width:100%;
+        bottom: 8rem;
+      }
+      
 .card svg {
-  height: 65px;
+  height: 5rem;
 }
 
 .card {
   position: absolute;
-	bottom:0px;
+	bottom:0rem;
   display: flex;
   align-items: center;
   justify-content: center;
   background: #e7e7e7;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  box-shadow: 0 1rem 2rem rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   overflow: hidden;
-  height: 100px;
+  height: 6rem;
   width: 100%;
 }
-/*
-.card::before, .card::after {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  width: 50%;
-  height: 100%;
-  transition: 0.25s linear;
-  z-index: 1;
-}*/
-/*
-.card::before {
-  content: "";
-  left: 0;
-  justify-content: flex-end;
-  background-color: #4d60b6;
-}*/
-/*
-.card::after {
-  content: "";
-  right: 0;
-  justify-content: flex-start;
-  background-color: #4453a6;
-}*/
-/*
-.card:hover {
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-}*/
-/*
-.card:hover span {
-  opacity: 0;
-  z-index: -3;
-}
-*//*
-.card:hover::before {
-  opacity: 0.5;
-  transform: translateY(-100%);
-}*/
-/*
-.card:hover::after {
-  opacity: 0.5;
-  transform: translateY(100%);
-}
-
-.card span {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  color: whitesmoke;
-  font-family: 'Fira Mono', monospace;
-  font-size: 24px;
-  font-weight: 700;
-  opacity: 1;
-  transition: opacity 0.25s;
-  z-index: 2;
-}*/
-
 .card .social-link {
   position: relative;
   display: flex;
@@ -285,250 +217,309 @@
   background-color: rgba(249, 244, 255, 0.774);
   animation: bounce_613 0.4s linear;
 }
-
-@keyframes bounce_613 {
-  40% {
-    transform: scale(1.4);
-  }
-
-  60% {
-    transform: scale(0.8);
-  }
-
-  80% {
-    transform: scale(1.2);
-  }
-
-  100% {
-    transform: scale(1);
-  }
+.container-1{
+	display:flex;
+	justify-content:center;
 }
+
+    .circle 1{
+        margin:2rem;height: 80px;width:80px;
+    }
+    .help{
+        
+    }
+
+    .dropbtn {
+    
+    background-color: #3498DB;
+    color: white;
+    padding: 1rem;
+    font-size: 2rem;
+    border: none;
+    margin-right: 50rem;
+    margin-top: 15rem;
+
+}
+li{
+    padding: 2rem;
+}
+.dropup {
+  position: relative;
+  display: inline-block;
+
+}
+
+.dropup-content {
+
+  position: absolute;
+  background-color: #f1f1f1;
+  margin-right: 40rem;
+  bottom: 10rem;
+  height: 85rem;
+  width: 50rem;
+  border-radius: 50px 50px 50px 50px;
+  z-index: 1;
+}
+
+
+
+
     </style>
-</head>
- 
-<body oncontextmenu="return false;" style="background: linear-gradient(#91a5d8 0%, #e6e6e0 10%, #a9b0cd 90%, #7d7cb9 100%); ">
-     <center><br><div style="font-size:110px;background-color:white;font-family:Fantasy;width:100%;border-radius:100px;border:2px solid black"> <a style="color:red">S</a><a style="color:yellow">n</a><a style="color:green">o</a><a style="color:brown">o</a><a style="color:blue">k</a><a style="color:pink">e</a><a style="color:black">r</a>  Shuffle</div>
-<br><br>
 
-<div class="container">	     
-	<div class="circle" id="circles" style="margin:2rem;height: 80px;width:80px;background: linear-gradient(#e4e830 0%, #e4e82d 10%, #cbd331 50%, #b5b521 100%);  border-radius: 50%;  display: flex;  justify-content: center;  align-items: center;  position: relative;"></div>
-	<div class="circle" id="circles1" style="margin:2rem;height: 80px;width:80px;background: linear-gradient(#199417 0%, #0a6b0b 10%, #074d13 50%, #083a15 100%);  border-radius: 50%;  display: flex;  justify-content: center;  align-items: center;  position: relative;"></div>
-	<div class="circle" id="circles2" style="margin:2rem;height: 80px;width:80px;background: linear-gradient(#a44715 0%, #84370e 10%, #57310a 50%, #482a07 100%);  border-radius: 50%;  display: flex;  justify-content: center;  align-items: center;  position: relative;"></div>
-	<div class="circle" id="circles3" style="margin:2rem;height: 80px;width:80px;background: linear-gradient(#3225eb 0%, #2121d6 10%, #301185 50%, #120855 100%);  border-radius: 50%;  display: flex;  justify-content: center;  align-items: center;  position: relative;"></div>
-	<div class="circle" id="circles4" style="margin:2rem;height: 80px;width:80px;background: linear-gradient(#f676c9 0%, #cf51b0 10%, #d332be 50%, #760b64 100%);  border-radius: 50%;  display: flex;  justify-content: center;  align-items: center;  position: relative;"></div>
-	<div class="circle" id="circles5" style="margin:2rem;height: 80px;width:80px;background: linear-gradient(#494849 0%, #323132 10%, #1f1e1f 50%, #050505 100%);  border-radius: 50%;  display: flex;  justify-content: center;  align-items: center;  position: relative;"></div>
-</div>
-<br><br>
-<div id="arr1 "></div>
+    </head>
 
+    <body>
+        <div class="container">
+            <header style="padding:0 1rem;max-width:60rem;margin:0 auto;"> 
+                <h1><b>Snooker Shuffle</b></h1>
+                <p style="color:gray;font-size: 2.4rem">Play Snooker like Ronnie O'Sullivan</p>
 
-<div class="circle" id="circle" style="display:none"></div>
-      
-<div style="font-size:90px;color:black" id="picked"></div>
-<br><br>
-<div style="font-size: 100px;color:black" id="countdown-text"></div>
-<div id="leng" style="font-size:60px;font-family:cursive">6 Colors Remaining </div>
-  <br><br><br><br><br>
-  <div style="height:150px;width:340px;position:relative;box-shadow: 2px 2px 50px 23px #85a1af;border-radius:100px" id="show" onclick="show()">
-    <img class="show" style="height:90px" id="show"  src="https://static.thenounproject.com/png/50682-200.png"style="">
-    
-    <h1 style="font-size:70px;margin-top: -10%;">Shuffle</h1>        
-    </img>
-    
-    </div>
-    
-      <div id="done" style="background-color:white;color:red;font-size:70px;"></div>
-    </center>
-   
-  <div style="margin-top:20%">
-    <img id="end" hidden onclick="end()" src="https://fontmeme.com/images/set-in-aviano-bold-font.png" style="float:left;border:10px solid black;width:350px;height:150px;border-radius:90px"></img>
-    
-    <img id="reset" hidden onclick="reset()" src="https://th.bing.com/th/id/R.6579de5bd04678eb19eb5a5ddca8b8b8?rik=PmRIdNaZZBFYrA&riu=http%3a%2f%2fwww.clker.com%2fcliparts%2f1%2fV%2fQ%2fQ%2fk%2f4%2freset-button-blue-md.png&ehk=JvNENdItyAykZcMZpgnRH8Pl4lq7skWH0EYCWQF3IvE%3d&risl=&pid=ImgRaw&r=0" style="float:right;width:330px;height:170px"></img>
-  </div>
-   
-    <footer id="footer" onclick="dot()">Made with &hearts; By Pratik Sutar <br></footer>
-    <div class="card">
-       <!-- <span style="font-size: 60px;">My Social</span> -->
-        <a class="social-link" href="https://www.youtube.com/@PratikSutarVlogs/">
-          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="https://www.youtube.com/@PratikSutarVlogs/" viewBox="0 0 461.001 461.001" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path style="fill:#F61C0D;" d="M365.257,67.393H95.744C42.866,67.393,0,110.259,0,163.137v134.728 c0,52.878,42.866,95.744,95.744,95.744h269.513c52.878,0,95.744-42.866,95.744-95.744V163.137 C461.001,110.259,418.135,67.393,365.257,67.393z M300.506,237.056l-126.06,60.123c-3.359,1.602-7.239-0.847-7.239-4.568V168.607 c0-3.774,3.982-6.22,7.348-4.514l126.06,63.881C304.363,229.873,304.298,235.248,300.506,237.056z"></path> </g> </g></svg>
-        </a>
-       
-        <a class="social-link" href="https://www.linkedin.com/in/pratiksutar1901/">
-        <svg style="color: blue" xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16"> <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" fill="blue"></path> </svg>
-        </a>
-        <a class="social-link" href="https://www.instagram.com/me_pratik.__/">
-            <svg style="color: red" xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16"> <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" fill="red"></path> </svg>
-        </a>
-      </div>
+                <hr style="border:2px solid gray">
+              </header>
+            <div class="container-1">	     
+                <div class="circle 1" id="circles" style="margin:3%;height: 5rem;width:5rem;background: linear-gradient(#e4e830 0%, #e4e82d 10%, #cbd331 50%, #b5b521 100%);  border-radius: 50%;  display: flex;  justify-content: center;  align-items: center;  position: relative;"></div>
+                <div class="circle 1" id="circles1" style="margin:3%;height: 5rem;width:5rem;background: linear-gradient(#199417 0%, #0a6b0b 10%, #074d13 50%, #083a15 100%);  border-radius: 50%;  display: flex;  justify-content: center;  align-items: center;  position: relative;"></div>
+                <div class="circle 1" id="circles2" style="margin:3%;height: 5rem;width:5rem;background: linear-gradient(#a44715 0%, #84370e 10%, #57310a 50%, #482a07 100%);  border-radius: 50%;  display: flex;  justify-content: center;  align-items: center;  position: relative;"></div>
+                <div class="circle 1" id="circles3" style="margin:3%;height: 5rem;width:5rem;background: linear-gradient(#3225eb 0%, #2121d6 10%, #301185 50%, #120855 100%);  border-radius: 50%;  display: flex;  justify-content: center;  align-items: center;  position: relative;"></div>
+                <div class="circle 1" id="circles4" style="margin:3%;height: 5rem;width:5rem;background: linear-gradient(#f676c9 0%, #cf51b0 10%, #d332be 50%, #760b64 100%);  border-radius: 50%;  display: flex;  justify-content: center;  align-items: center;  position: relative;"></div>
+                <div class="circle 1" id="circles5" style="margin:3%;height: 5rem;width:5rem;background: linear-gradient(#494849 0%, #323132 10%, #1f1e1f 50%, #050505 100%);  border-radius: 50%;  display: flex;  justify-content: center;  align-items: center;  position: relative;"></div>
+            </div>    
+
+            
+            <div class="circle" id="circle" style="display:none;"></div>
+                
+            <div style="font-size:90px;color:black" id="picked"></div>
+            <br><br>
+            <div style="font-size: 100px;color:black" id="countdown-text"></div>
+            <div id="leng" style="font-size:60px;font-family:cursive">6 Colors Remaining </div>
+            <br><br><br>
+            <div style="margin:0 auto;height:35%;width:40%;position:relative;box-shadow: 2px 2px 50px 23px #85a1af;border-radius:100px" id="show" onclick="show()">
+                <img class="show" style="height:90px" id="show"  src="https://static.thenounproject.com/png/50682-200.png"style="">
+                
+                <h1 style="font-size:70px;margin-top: -10%;">Shuffle</h1>        
+                </img>
+            </div>
+            <div id="done" style="background-color:white;color:red;font-size:70px;"></div>
+                
+               
+            <div style="margin-top:5%">
+                <img id="end" hidden onclick="end()" src="https://fontmeme.com/images/set-in-aviano-bold-font.png" style="margin-left:5rem;float:left;border:10px solid black;width:15rem;height:5rem;border-radius:90px"></img>
+                
+                <img id="reset" hidden onclick="reset()" src="https://th.bing.com/th/id/R.6579de5bd04678eb19eb5a5ddca8b8b8?rik=PmRIdNaZZBFYrA&riu=http%3a%2f%2fwww.clker.com%2fcliparts%2f1%2fV%2fQ%2fQ%2fk%2f4%2freset-button-blue-md.png&ehk=JvNENdItyAykZcMZpgnRH8Pl4lq7skWH0EYCWQF3IvE%3d&risl=&pid=ImgRaw&r=0" style="margin-right:5rem;float:right;width:18rem;height:6rem;"></img>
+            </div>
+          
+               
+            <div class="dropup ">
+                <button class="dropbtn" onclick="dropup()">Help ?</button>
+                <div hidden class="dropup-content" id="dropup">
+                  <p>How to use this app ?</p>
+                  <hr>
+                    <ul>
+                        <li>This app is made for snooker shuffle game mode.</li><br>
+                        <li>When a player qualifies by potting 2 red balls, he can press shuffle button and then he will get a random color as his color ball to pot and finish the game.</li>
+                        <br><li>When all 6 colors are picked you can check colors picked in sequence order, players have to remember sequence of the players qualified and picked the color.</li>
+                        <br><li>For checking colors tap on red heart below and then click on END GAME button and enter password - 1010</li>
+                    </ul>
+                  
+                </div>
+              </div>
+                
+              </div>
+                <footer id="footer" onclick="dot()">Made with <i style="color: red;">&hearts;</i>  By Pratik Sutar <br></footer>
+                <div class="card">
+                   <!-- <span style="font-size: 60px;">My Social</span> -->
+                    <a class="social-link" href="https://www.youtube.com/@PratikSutarVlogs/">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="https://www.youtube.com/@PratikSutarVlogs/" viewBox="0 0 461.001 461.001" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path style="fill:#F61C0D;" d="M365.257,67.393H95.744C42.866,67.393,0,110.259,0,163.137v134.728 c0,52.878,42.866,95.744,95.744,95.744h269.513c52.878,0,95.744-42.866,95.744-95.744V163.137 C461.001,110.259,418.135,67.393,365.257,67.393z M300.506,237.056l-126.06,60.123c-3.359,1.602-7.239-0.847-7.239-4.568V168.607 c0-3.774,3.982-6.22,7.348-4.514l126.06,63.881C304.363,229.873,304.298,235.248,300.506,237.056z"></path> </g> </g></svg>
+                    </a>
+                   
+                    <a class="social-link" href="https://www.linkedin.com/in/pratiksutar1901/">
+                        <svg style="color: blue" xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16"> <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" fill="blue"></path> </svg>
+                    </a>
+                    <a class="social-link" href="https://www.instagram.com/me_pratik.__/">
+                        <svg style="color: red" xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16"> <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" fill="red"></path> </svg>
+                    </a>
+                </div>
+        </div>
+         
+    </body>
+
     <script>
-	    
-	document.onkeydown = function(e) {
-		if(event.keyCode == 123) {
-			return false;
-		}
-		if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
-			return false;
-		}
-		if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
-			return false;
-		}
-		if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
-			return false;
-		}
-		if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
-			return false;
-		}
-	}   
-	    	
-	let text = "Total width/height: " + screen.width + "*" + screen.height + "<br>" +
-        "Available width/height: " + screen.availWidth + "*" + screen.availHeight ;
-        // document.getElementById("demo").innerHTML = text;
-        let hgt=parseInt(screen.height);
-        let hgt1=650;
-        var element = document.getElementById("footer");
-        element.style.marginTop =hgt-hgt1+"px" ;
-	    
-  	var counter = 3;
-        // Function to shuffle the array content
-        
-        document.getElementById('circle').setAttribute('style','height: 300px;width: 300px;background: linear-gradient(#ffffff 0%, #ebebe7 10%, #d7d9d6 50%, #c6c6c3 100%);  border-radius: 50%;  display: flex;  justify-content: center;  align-items: center;  position: relative;')
-        
-        var endgame = 1;
-        function shuffleArray(array) {
-           return array.sort( ()=>Math.random()-0.5 );
-        }
-        var arr = [2, 3, 4, 5, 6, 7]
-	    var picked = []
-        var i =0;
-        var len =1;
-        // Function to show the result
-        function show() {
-            
-            isSetTimmeoutRunning = false;
-            document.getElementById('show').style.display="none";
-            startCountdown();
-            if(len !=0){
-                var arr1 = shuffleArray(arr)
-
-                document.getElementById('done').innerHTML=" "
-                var arr1 = shuffleArray(arr)
+        var drop =0;
+	    function dropup(){
+            if(drop==0){
+                document.getElementById('dropup').style.display="block";
+                drop = 1;
             }else{
-                document.getElementById('done').style.color="red"
-                    document.getElementById('done').innerHTML="All Numbers Used"
-                    alert("Please Click End Game to Reveal Numbers ");
-                    //document.getElementById('picked').innerHTML = picked;
+                drop = 0;
+                document.getElementById('dropup').style.display="none";
             }
-            if(arr1.length != 0){
-        
-                var indexx = arr.indexOf(arr1[0]);
             
-                len=arr1.length-1;
-                document.getElementById('leng').innerHTML = arr1.length-1+ " Colors Remaining";
-
-                picked[i]=arr1[0];
-                i++;
-                if(arr1[0] == 2){                    
-                    document.getElementById('circle').setAttribute('style','height: 300px;width: 300px;background: linear-gradient(#ecf002 0%, #cbce12 10%, #c5ce0c 50%, #939311 100%);  border-radius: 50%;  display: flex;  justify-content: center;  align-items: center;  position: relative;')
-                     
-                }else if(arr1[0] == 3){
-                    document.getElementById('circle').setAttribute('style','height: 300px;width: 300px;background: linear-gradient(#199417 0%, #0a6b0b 10%, #074d13 50%, #083a15 100%);  border-radius: 50%;  display: flex;  justify-content: center;  align-items: center;  position: relative;')                    
-                    
-                }else if(arr1[0] == 4){
-                    document.getElementById('circle').setAttribute('style','height: 300px;width: 300px;background: linear-gradient(#a44715 0%, #84370e 10%, #57310a 50%, #482a07 100%);  border-radius: 50%;  display: flex;  justify-content: center;  align-items: center;  position: relative;')
-                    
-                }else if(arr1[0] == 5){
-                    document.getElementById('circle').setAttribute('style','height: 300px;width: 300px;background: linear-gradient(#3225eb 0%, #2121d6 10%, #301185 50%, #120855 100%);  border-radius: 50%;  display: flex;  justify-content: center;  align-items: center;  position: relative;')
-                    
-                }else if(arr1[0] == 6){
-                    document.getElementById('circle').setAttribute('style','height: 300px;width: 300px;background: linear-gradient(#f676c9 0%, #cf51b0 10%, #d332be 50%, #760b64 100%);  border-radius: 50%;  display: flex;  justify-content: center;  align-items: center;  position: relative;')
-                    
-                }else if(arr1[0] == 7){
-                    document.getElementById('circle').setAttribute('style','height: 300px;width: 300px;background: linear-gradient(#494849 0%, #323132 10%, #1f1e1f 50%, #050505 100%);  border-radius: 50%;  display: flex;  justify-content: center;  align-items: center;  position: relative;')
-
+        }
+        document.onkeydown = function(e) {
+            if(event.keyCode == 123) {
+                return false;
+            }
+            if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+                return false;
+            }
+            if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+                return false;
+            }
+            if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+                return false;
+            }
+            if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+                return false;
+            }
+        }   
+                
+        let text = "Total width/height: " + screen.width + "*" + screen.height + "<br>" +
+            "Available width/height: " + screen.availWidth + "*" + screen.availHeight ;
+            // document.getElementById("demo").innerHTML = text;
+            let hgt=parseInt(screen.height);
+            let hgt1=650;
+            var element = document.getElementById("footer");
+            element.style.marginTop =hgt-hgt1+"px" ;
+            
+          var counter = 3;
+            // Function to shuffle the array content
+            
+            document.getElementById('circle').setAttribute('style',' margin:0 auto;margin-top:5rem;height: 25rem;width: 25rem;background: linear-gradient(#ffffff 0%, #ebebe7 10%, #d7d9d6 50%, #c6c6c3 100%);  border-radius: 50%;  display: flex;  position: relative;')
+            
+            var endgame = 1;
+            function shuffleArray(array) {
+               return array.sort( ()=>Math.random()-0.5 );
+            }
+            var arr = [2, 3, 4, 5, 6, 7]
+            var picked = []
+            var i =0;
+            var len =1;
+            // Function to show the result
+            function show() {
+                
+                isSetTimmeoutRunning = false;
+                document.getElementById('show').style.display="none";
+                startCountdown();
+                if(len !=0){
+                    var arr1 = shuffleArray(arr)
+    
+                    document.getElementById('done').innerHTML=" "
+                    var arr1 = shuffleArray(arr)
+                }else{
+                    document.getElementById('done').style.color="red"
+                        document.getElementById('done').innerHTML="All Numbers Used"
+                        alert("Please Click End Game to Reveal Numbers ");
+                        //document.getElementById('picked').innerHTML = picked;
                 }
+                if(arr1.length != 0){
+            
+                    var indexx = arr.indexOf(arr1[0]);
+                
+                    len=arr1.length-1;
+                    document.getElementById('leng').innerHTML = arr1.length-1+ " Colors Remaining";
     
-                arr1.splice(indexx, 1);
-                arr = arr1;
-            }
-                a = setTimeout(hide, 3000);  
-                counter = 3;           
-        }
-
-
-        function reset(){
-            endgame=1;
-            arr = [2, 3, 4, 5, 6, 7]
-            picked = [];
-            document.getElementById('end').style.display="none";
-            document.getElementById('reset').style.display="none";
-            
-            setTimeout(
-    function() {
-        document.getElementById('done').innerHTML=""
-      
-    }, 2000);
-            
-            document.getElementById('done').style.color="green"    
-            //document.getElementById('random').innerHTML = "0";
-            //document.getElementById('random').style.backgroundColor='grey'
-            document.getElementById('leng').innerHTML = "6 Colors Remaining";
-            document.getElementById('picked').innerHTML = " ";
-            i = 0;
-            len = 1;
-        }
-	    function hide(){
-            document.getElementById('show').style.display="block";
-            document.getElementById('circle').setAttribute('style','height: 300px;width: 300px;background: linear-gradient(#ffffff 0%, #ebebe7 10%, #d7d9d6 50%, #c6c6c3 100%);  border-radius: 50%;  display: flex;  justify-content: center;  align-items: center;  position: relative;')
-            // document.getElementById('innertext').innerHTML = " ";
-            // document.getElementById('random').style.backgroundColor='white'
-            // document.getElementById('ii').src="https://th.bing.com/th/id/R.b492a681dbf87b5cfe78040d5c908c69?rik=9Ae18mQbJJ%2fndg&riu=http%3a%2f%2fwww.snookerandpool.co.uk%2fphotos%2f1.704846white_cue_ball.jpg&ehk=2DDwTS%2fxqKXVnRyHxFcSlvZhjFWyezEw8bbVvuCTQj8%3d&risl=&pid=ImgRaw&r=0"
-	    }
-
-        function end(){
-            inputt=parseInt(prompt('Enter Passcode'))
-            if(inputt == 1010){
-            if(endgame == 1){
-                endgame =0;
-            document.getElementById('picked').innerHTML ="GAME FINISHED<br> [ "+ picked+" ]";
-
-            arr = [2, 3, 4, 5, 6, 7]
-            picked = [];
-            i = 0;
-            len = 1;
-            }else{
-                alert('Game FINISHED --- Please Reset The game for New ')
-                endgame=0;
-            }
-            
-        }else{
-            alert('Enter correct Pass Code ')
-       	 }
-        }
-
-        function dot(){
-            document.getElementById('end').style.display="block";
-            document.getElementById('reset').style.display="block";
-        }
+                    picked[i]=arr1[0];
+                    i++;
+                    if(arr1[0] == 2){                    
+                        document.getElementById('circle').setAttribute('style',' margin:0 auto;margin-top:5rem;height: 25rem;width: 25rem;background: linear-gradient(#ecf002 0%, #cbce12 10%, #c5ce0c 50%, #939311 100%);  border-radius: 50%;  display: flex;  justify-content: center;  align-items: center;  position: relative;')
+                         
+                    }else if(arr1[0] == 3){
+                        document.getElementById('circle').setAttribute('style',' margin:0 auto;margin-top:5rem;height: 25rem;width: 25rem;background: linear-gradient(#199417 0%, #0a6b0b 10%, #074d13 50%, #083a15 100%);  border-radius: 50%;  display: flex;  justify-content: center;  align-items: center;  position: relative;')                    
+                        
+                    }else if(arr1[0] == 4){
+                        document.getElementById('circle').setAttribute('style',' margin:0 auto;margin-top:5rem;height: 25rem;width: 25rem;background: linear-gradient(#a44715 0%, #84370e 10%, #57310a 50%, #482a07 100%);  border-radius: 50%;  display: flex;  justify-content: center;  align-items: center;  position: relative;')
+                        
+                    }else if(arr1[0] == 5){
+                        document.getElementById('circle').setAttribute('style',' margin:0 auto;margin-top:5rem;height: 25rem;width: 25rem;background: linear-gradient(#3225eb 0%, #2121d6 10%, #301185 50%, #120855 100%);  border-radius: 50%;  display: flex;  justify-content: center;  align-items: center;  position: relative;')
+                        
+                    }else if(arr1[0] == 6){
+                        document.getElementById('circle').setAttribute('style',' margin:0 auto;margin-top:5rem;height: 25rem;width: 25rem;background: linear-gradient(#f676c9 0%, #cf51b0 10%, #d332be 50%, #760b64 100%);  border-radius: 50%;  display: flex;  justify-content: center;  align-items: center;  position: relative;')
+                        
+                    }else if(arr1[0] == 7){
+                        document.getElementById('circle').setAttribute('style',' margin:0 auto;margin-top:5rem;height: 25rem;width: 25rem;background: linear-gradient(#494849 0%, #323132 10%, #1f1e1f 50%, #050505 100%);  border-radius: 50%;  display: flex;  justify-content: center;  align-items: center;  position: relative;')
+    
+                    }
         
-var isSetTimmeoutRunning = false;  
-function startCountdown(){
-    counter=3;
-  if( isSetTimmeoutRunning == false ){
-    isSetTimmeoutRunning = true;
-   
-    document.getElementById("countdown-text").innerHTML = "<b> Timer :-" + counter + "</b>";
-    var interval = setInterval(function(){
-      counter--;
-      document.getElementById("countdown-text").innerHTML = "<b> Timer :-" + counter + "</b>";
-      if( counter == 0 ){
-        document.getElementById("countdown-text").innerHTML = "";
-        clearInterval(interval);
-      }
-    }, 1000);
+                    arr1.splice(indexx, 1);
+                    arr = arr1;
+                }
+                    a = setTimeout(hide, 3000);  
+                    counter = 3;           
+            }
     
-  }
-}
-    </script>
-</body>
- 
-</html>
+    
+            function reset(){
+                endgame=1;
+                arr = [2, 3, 4, 5, 6, 7]
+                picked = [];
+                document.getElementById('end').style.display="none";
+                document.getElementById('reset').style.display="none";
+                
+                setTimeout(
+        function() {
+            document.getElementById('done').innerHTML=""
+          
+        }, 2000);
+                
+                document.getElementById('done').style.color="green"    
+                //document.getElementById('random').innerHTML = "0";
+                //document.getElementById('random').style.backgroundColor='grey'
+                document.getElementById('leng').innerHTML = "6 Colors Remaining";
+                document.getElementById('picked').innerHTML = " ";
+                i = 0;
+                len = 1;
+            }
+            function hide(){
+                document.getElementById('show').style.display="block";
+                document.getElementById('circle').setAttribute('style','margin:0 auto;margin-top:5rem;height: 25rem;width: 25rem;background: linear-gradient(#ffffff 0%, #ebebe7 10%, #d7d9d6 50%, #c6c6c3 100%);  border-radius: 50%;  display: flex;  justify-content: center;  align-items: center;  position: relative;')
+                // document.getElementById('innertext').innerHTML = " ";
+                // document.getElementById('random').style.backgroundColor='white'
+                // document.getElementById('ii').src="https://th.bing.com/th/id/R.b492a681dbf87b5cfe78040d5c908c69?rik=9Ae18mQbJJ%2fndg&riu=http%3a%2f%2fwww.snookerandpool.co.uk%2fphotos%2f1.704846white_cue_ball.jpg&ehk=2DDwTS%2fxqKXVnRyHxFcSlvZhjFWyezEw8bbVvuCTQj8%3d&risl=&pid=ImgRaw&r=0"
+            }
+    
+            function end(){
+                inputt=parseInt(prompt('Enter Passcode'))
+                if(inputt == 1010){
+                if(endgame == 1){
+                    endgame =0;
+                document.getElementById('picked').innerHTML ="GAME FINISHED<br> [ "+ picked+" ]";
+    
+                arr = [2, 3, 4, 5, 6, 7]
+                picked = [];
+                i = 0;
+                len = 1;
+                }else{
+                    alert('Game FINISHED --- Please Reset The game for New ')
+                    endgame=0;
+                }
+                
+            }else{
+                alert('Enter correct Pass Code ')
+                }
+            }
+    
+            function dot(){
+                document.getElementById('end').style.display="block";
+                document.getElementById('reset').style.display="block";
+            }
+            
+    var isSetTimmeoutRunning = false;  
+    function startCountdown(){
+        counter=3;
+      if( isSetTimmeoutRunning == false ){
+        isSetTimmeoutRunning = true;
+       
+        document.getElementById("countdown-text").innerHTML = "<b> Timer :-" + counter + "</b>";
+        var interval = setInterval(function(){
+          counter--;
+          document.getElementById("countdown-text").innerHTML = "<b> Timer :-" + counter + "</b>";
+          if( counter == 0 ){
+            document.getElementById("countdown-text").innerHTML = "";
+            clearInterval(interval);
+          }
+        }, 1000);
+        
+      }
+    }
+        </script>
+</HTML>
