@@ -4,9 +4,11 @@
     <title>
         Snooker Shuffle
     </title>
+    
     <head>
         <style>
             body{
+                max-width: 100%;
                 font-family:monospace;
                 font-size: 2rem;
                 text-align:center;
@@ -176,92 +178,88 @@ footer{
         font-size: 2rem;
         width:100%;
         bottom: 8rem;
+        max-width: 800px;
       }
       
-.card svg {
-  height: 5rem;
-}
-
-.card {
-  position: absolute;
-	bottom:0rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #e7e7e7;
-  box-shadow: 0 1rem 2rem rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  overflow: hidden;
-  height: 6rem;
-  width: 100%;
-}
-.card .social-link {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 25%;
-  height: 100%;
-  color: whitesmoke;
-  font-size: 24px;
-  text-decoration: none;
-  transition: 0.25s;
-}
-
-.card .social-link svg {
-  text-shadow: 1px 1px rgba(31, 74, 121, 0.7);
-  transform: scale(1);
-}
-
-.card .social-link:hover {
-  background-color: rgba(249, 244, 255, 0.774);
-  animation: bounce_613 0.4s linear;
-}
-.container-1{
-	display:flex;
-	justify-content:center;
-}
-
-    .circle 1{
-        margin:2rem;height: 80px;width:80px;
-    }
-    .help{
-        
-    }
-
-    .dropbtn {
+  .card svg {
+    height: 5rem;
     
+  }
+
+  .card {
+
+    max-width: 100%;
+    max-height: 12%;
+    position: absolute;
+    bottom:0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e7e7e7;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    overflow: hidden;
+    height:4.5%;
+    width: 100%;
+  }
+  .card .social-link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height:20%;
+    text-decoration: none;
+    transition: 0.25s;
+  }
+
+  .card .social-link svg {
+    text-shadow: 1px 1px rgba(31, 74, 121, 0.7);
+    transform: scale(1);
+    padding: 10px;
+  }
+
+  .card .social-link:hover {
+    background-color: rgba(249, 244, 255, 0.774);
+    animation: bounce_613 0.4s linear;
+  }
+  .container-1{
+    display:flex;
+    justify-content:center;
+  }
+
+  .dropbtn {  
     background-color: #3498DB;
     color: white;
     padding: 1rem;
     font-size: 2rem;
     border: none;
+    width: 20%;
+    
     margin-right: 50rem;
-    margin-top: 15rem;
-
-}
-li{
+    margin-top: 25rem;
+  }
+  li{
     padding: 2rem;
-}
-.dropup {
-  position: relative;
-  display: inline-block;
+  }
+  .dropup {
+    position: relative;
+    display: inline-block;
+  }
 
-}
+  .dropup-content {
 
-.dropup-content {
+    position: absolute;
+    background-color: #f1f1f1;
+    margin-right: 40rem;
+    bottom: 10rem;
+    height: 85rem;
+    width: 55rem;
+    border-radius: 50px 50px 50px 50px;
+    z-index: 1;
+  }
 
-  position: absolute;
-  background-color: #f1f1f1;
-  margin-right: 40rem;
-  bottom: 10rem;
-  height: 85rem;
-  width: 50rem;
-  border-radius: 50px 50px 50px 50px;
-  z-index: 1;
-}
-
-
+  
 
 
     </style>
@@ -310,8 +308,9 @@ li{
           
                
             <div class="dropup ">
-                <button class="dropbtn" onclick="dropup()">Help ?</button>
-                <div hidden class="dropup-content" id="dropup">
+                <button  id="dropbtn" class="dropbtn" onclick="dropup()"></button>
+                <!-- <button  id="close" onclick="dropup()" style="margin-right: 50rem;margin-top: -20rem;color:black;height:4rem;width: 15%;font-size: 4rem;background-color: transparent;">X</button> -->
+                <div class="dropup-content" id="dropup" style="display: none;">
                   <p>How to use this app ?</p>
                   <hr>
                     <ul>
@@ -345,13 +344,22 @@ li{
 
     <script>
         var drop =0;
+        document.getElementById('dropbtn').innerHTML="HELP ?";
 	    function dropup(){
-            if(drop==0){
+            if(document.getElementById('dropup').style.display=="none"){
                 document.getElementById('dropup').style.display="block";
-                drop = 1;
-            }else{
-                drop = 0;
+                document.getElementById('dropbtn').innerHTML="X";
+                document.getElementById('dropbtn').style.fontSize="2rem";
+                document.getElementById('dropbtn').style.backgroundColor="transparent";
+                document.getElementById('dropbtn').style.color="black";
+                document.getElementById('dropbtn').style.border="1px solid black";
+            }else if(document.getElementById('dropup').style.display=="block"){
                 document.getElementById('dropup').style.display="none";
+                document.getElementById('dropbtn').innerHTML="HELP ?";
+                document.getElementById('dropbtn').style.fontSize="2rem";
+                document.getElementById('dropbtn').style.backgroundColor="#3498DB";
+                document.getElementById('dropbtn').style.color="white";
+                document.getElementById('dropbtn').style.border="0px solid black";
             }
             
         }
