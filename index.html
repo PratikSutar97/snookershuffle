@@ -235,28 +235,36 @@ footer{
     font-size: 2rem;
     border: none;
     width: 20%;
-    
     margin-right: 50rem;
-    margin-top: 25rem;
+    margin-top: 15rem;
+  }
+  .close{
+    background-color: #db3434;
+    color: white;
+    padding: 1rem;
+    margin-right:1rem;
+    font-size: 1.8rem;
+    border: none;
+    width: 10%;
+    float: right;
   }
   li{
     padding: 2rem;
   }
-  .dropup {
+  /* .dropup {
     position: relative;
     display: inline-block;
-  }
+  } */
 
   .dropup-content {
-
     position: absolute;
     background-color: #f1f1f1;
-    margin-right: 40rem;
-    bottom: 10rem;
+    margin-left: 3rem;
+    bottom: 25rem;
     height: 85rem;
     width: 55rem;
     border-radius: 50px 50px 50px 50px;
-    z-index: 1;
+  
   }
 
   
@@ -311,7 +319,7 @@ footer{
                 <button  id="dropbtn" class="dropbtn" onclick="dropup()"></button>
                 <!-- <button  id="close" onclick="dropup()" style="margin-right: 50rem;margin-top: -20rem;color:black;height:4rem;width: 15%;font-size: 4rem;background-color: transparent;">X</button> -->
                 <div class="dropup-content" id="dropup" style="display: none;">
-                  <p>How to use this app ?</p>
+                  <p>How to use this app ? <button  id="close" class="close" onclick="dropup()">X</button></p>
                   <hr>
                     <ul>
                         <li>This app is made for snooker shuffle game mode.</li><br>
@@ -348,18 +356,15 @@ footer{
 	    function dropup(){
             if(document.getElementById('dropup').style.display=="none"){
                 document.getElementById('dropup').style.display="block";
-                document.getElementById('dropbtn').innerHTML="X";
-                document.getElementById('dropbtn').style.fontSize="2rem";
-                document.getElementById('dropbtn').style.backgroundColor="transparent";
-                document.getElementById('dropbtn').style.color="black";
-                document.getElementById('dropbtn').style.border="1px solid black";
+                 document.getElementById('dropbtn').style.display="none";
+                // document.getElementById('dropbtn').style.fontSize="2rem";
+                // document.getElementById('dropbtn').style.backgroundColor="transparent";
+                // document.getElementById('dropbtn').style.color="black";
+                // document.getElementById('dropbtn').style.border="1px solid black";
             }else if(document.getElementById('dropup').style.display=="block"){
                 document.getElementById('dropup').style.display="none";
-                document.getElementById('dropbtn').innerHTML="HELP ?";
-                document.getElementById('dropbtn').style.fontSize="2rem";
-                document.getElementById('dropbtn').style.backgroundColor="#3498DB";
-                document.getElementById('dropbtn').style.color="white";
-                document.getElementById('dropbtn').style.border="0px solid black";
+                document.getElementById('dropbtn').style.display="block";
+                
             }
             
         }
