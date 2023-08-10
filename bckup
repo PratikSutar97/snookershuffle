@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+
+<HTML>
+    <title>
+        Snooker Shuffle
+    </title>
+    
+    <head>
+        <style>
+            body{
+		    overscroll-behavior: none;
+                max-width: 100%;
+                font-family:monospace;
+                font-size: 2rem;
+                text-align:center;
+                display:flex;
+                flex-direction:column;
+                min-height:100vh;
+                background: linear-gradient(#91a5d8 0%, #e6e6e0 10%, #a9b0cd 90%, #7d7cb9 100%);
+            }
+
+        #circles{
+            animation-name: jump;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+        #circles1{
+            animation-name: jump;
+            animation-duration: 0.6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+      #circles2{
+        animation-name: jump;
+      animation-duration: 2.7s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      }
+      #circles3{
+        animation-name: jump;
+      animation-duration: 1.8s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      }
+      #circles4{
+        animation-name: jump;
+      animation-duration: 0.9s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      }
+      #circles5{
+        animation-name: jump;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      }
+      @keyframes jump {
+  from, 20%, 53%, 80%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+  }
+
+  40%, 43% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    -webkit-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0);
+  }
+
+  70% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    -webkit-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0,-4px,0);
+    transform: translate3d(0,-4px,0);
+  }
+}
+
+.jump {
+  -webkit-animation-name: bounce;
+  animation-name: bounce;
+  -webkit-transform-origin: center bottom;
+  transform-origin: center bottom;
+}
+
+        .show:active {
+            transform: scale(0.85);
+            box-shadow: 3px 2px 25px 1px ;
+        }
+
+
+.circle::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(185, 186, 182, 0.949);
+  bottom: -60px;
+  z-index: -1;
+  filter: blur(10px);
+}
+
+
+.circle1::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(16, 91, 9, 0.6);
+  bottom: -60px;
+  z-index: -1;
+  filter: blur(10px);
+}
+
+
+.circle2::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(125, 72, 12, 0.6);
+  bottom: -60px;
+  z-index: -1;
+  filter: blur(10px);
+}
+
+
+.circle3::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(12, 21, 125, 0.6);
+  bottom: -60px;
+  z-index: -1;
+  filter: blur(10px);
+}
+
+
+.circle4::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(155, 14, 129, 0.6);
+  bottom: -80px;
+  z-index: -1;
+  filter: blur(10px);
+}
+
+
+.circle5::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(12, 12, 12, 0.6);
+  bottom: -60px;
+  z-index: -1;
+  filter: blur(10px);
+}
+
+footer{
+        position: absolute;
+        color:#333030;
+        
+        font-size: 2rem;
+        width:100%;
+        height: 25px;
+        bottom: 8rem;
+        
+      }
+      
+  .card svg {
+    height: 5rem;
+    
+  }
+
+  .card {
+
+    max-width: 100%;
+    max-height: 12%;
+    position: absolute;
+    bottom:0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e7e7e7;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    overflow: hidden;
+    height:4.5%;
+    width: 100%;
+  }
+  .card .social-link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height:20%;
+    text-decoration: none;
+    transition: 0.25s;
+  }
+
+  .card .social-link svg {
+    text-shadow: 1px 1px rgba(31, 74, 121, 0.7);
+    transform: scale(1);
+    padding: 10px;
+  }
+
+  .card .social-link:hover {
+    background-color: rgba(249, 244, 255, 0.774);
+    animation: bounce_613 0.4s linear;
+  }
+  .container-1{
+    display:flex;
+    justify-content:center;
+  }
+
+  .dropbtn {  
+    background-color: #3498DB;
+    color: white;
+    padding: 1rem;
+    font-size: 2rem;
+    border: none;
+    width: 20%;
+    margin-right: 50rem;
+    margin-top: 15rem;
+  }
+  .close{
+    background-color: #db3434;
+    color: white;
+    padding: 1rem;
+    margin-right:1rem;
+    font-size: 1.8rem;
+    border: none;
+    width: 10%;
+    float: right;
+  }
+  li{
+    padding: 2rem;
+  }
+  /* .dropup {
+    position: relative;
+    display: inline-block;
+  } */
+
+  .dropup-content {
+    position: absolute;
+    background-color: #f1f1f1;
+    margin-left: 3rem;
+    bottom: 25rem;
+    height: 85rem;
+    width: 55rem;
+    border-radius: 50px 50px 50px 50px;
+  
+  }
+
+  
+
+
+    </style>
+
+    </head>
+
+    <body>
+        <div class="container">
+            <header style="padding:0 1rem;max-width:60rem;margin:0 auto;"> 
+                <h1><b>Snooker Shuffle</b></h1>
+                <p style="color:gray;font-size: 2.4rem">Play Snooker like Ronnie O'Sullivan</p>
+
+                <hr style="border:2px solid gray">
+              </header>
+            <div class="container-1">	     
+                <div class="circle 1" id="circles" style="margin:3%;height: 5rem;width:5rem;background: linear-gradient(#e4e830 0%, #e4e82d 10%, #cbd331 50%, #b5b521 100%);  border-radius: 50%;  display: flex;  justify-content: center;  align-items: center;  position: relative;"></div>
+                <div class="circle 1" id="circles1" style="margin:3%;height: 5rem;width:5rem;background: linear-gradient(#199417 0%, #0a6b0b 10%, #074d13 50%, #083a15 100%);  border-radius: 50%;  display: flex;  justify-content: center;  align-items: center;  position: relative;"></div>
+                <div class="circle 1" id="circles2" style="margin:3%;height: 5rem;width:5rem;background: linear-gradient(#a44715 0%, #84370e 10%, #57310a 50%, #482a07 100%);  border-radius: 50%;  display: flex;  justify-content: center;  align-items: center;  position: relative;"></div>
+                <div class="circle 1" id="circles3" style="margin:3%;height: 5rem;width:5rem;background: linear-gradient(#3225eb 0%, #2121d6 10%, #301185 50%, #120855 100%);  border-radius: 50%;  display: flex;  justify-content: center;  align-items: center;  position: relative;"></div>
+                <div class="circle 1" id="circles4" style="margin:3%;height: 5rem;width:5rem;background: linear-gradient(#f676c9 0%, #cf51b0 10%, #d332be 50%, #760b64 100%);  border-radius: 50%;  display: flex;  justify-content: center;  align-items: center;  position: relative;"></div>
+                <div class="circle 1" id="circles5" style="margin:3%;height: 5rem;width:5rem;background: linear-gradient(#494849 0%, #323132 10%, #1f1e1f 50%, #050505 100%);  border-radius: 50%;  display: flex;  justify-content: center;  align-items: center;  position: relative;"></div>
+            </div>    
+
+            
+            <div class="circle" id="circle" style="display:none;"></div>
+                
+            <div style="font-size:90px;color:black" id="picked"></div>
+            <br><br>
+            <div style="font-size: 100px;color:black" id="countdown-text"></div>
+            <div id="leng" style="font-size:60px;font-family:cursive">6 Colors Remaining </div>
+            <br><br><br>
+            <div style="margin:0 auto;height:35%;width:40%;position:relative;box-shadow: 2px 2px 50px 23px #85a1af;border-radius:100px" id="show" onclick="show()">
+                <img class="show" style="height:90px" id="show"  src="https://static.thenounproject.com/png/50682-200.png"style="">
+                
+                <h1 style="font-size:70px;margin-top: -10%;">Shuffle</h1>        
+                </img>
+            </div>
+            <div id="done" style="background-color:white;color:red;font-size:70px;"></div>
+                
+               
+            <div style="margin-top:5%">
+                <img id="end" hidden onclick="end()" src="https://fontmeme.com/images/set-in-aviano-bold-font.png" style="margin-left:5rem;float:left;border:10px solid black;width:15rem;height:5rem;border-radius:90px"></img>
+                
+                <img id="reset" hidden onclick="reset()" src="https://th.bing.com/th/id/R.6579de5bd04678eb19eb5a5ddca8b8b8?rik=PmRIdNaZZBFYrA&riu=http%3a%2f%2fwww.clker.com%2fcliparts%2f1%2fV%2fQ%2fQ%2fk%2f4%2freset-button-blue-md.png&ehk=JvNENdItyAykZcMZpgnRH8Pl4lq7skWH0EYCWQF3IvE%3d&risl=&pid=ImgRaw&r=0" style="margin-right:5rem;float:right;width:18rem;height:6rem;"></img>
+            </div>
+          
+               
+            <div class="dropup ">
+                <button  id="dropbtn" class="dropbtn" onclick="dropup()"></button>
+                <!-- <button  id="close" onclick="dropup()" style="margin-right: 50rem;margin-top: -20rem;color:black;height:4rem;width: 15%;font-size: 4rem;background-color: transparent;">X</button> -->
+                <div class="dropup-content" id="dropup" style="display: none;">
+                  <p>How to use this app ? <button  id="close" class="close" onclick="dropup()">X</button></p>
+                  <hr>
+                    <ul>
+                        <li>This app is made for snooker shuffle game mode.</li><br>
+                        <li>When a player qualifies by potting 2 red balls, he can press shuffle button and then he will get a random color as his color ball to pot and finish the game.</li>
+                        <br><li>When all 6 colors are picked you can check colors picked in sequence order, players have to remember sequence of the players qualified and picked the color.</li>
+                        <br><li>For checking colors tap on red heart below and then click on END GAME button and enter password - 1010</li>
+                    </ul>
+                  
+                </div>
+              </div>
+                
+              </div>
+                <footer id="footer" onclick="dot()">Made with <i style="color: red;">&hearts;</i>  By Pratik Sutar <br></footer>
+                <div class="card">
+                   <!-- <span style="font-size: 60px;">My Social</span> -->
+                    <a class="social-link" href="https://www.youtube.com/@PratikSutarVlogs/">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="https://www.youtube.com/@PratikSutarVlogs/" viewBox="0 0 461.001 461.001" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path style="fill:#F61C0D;" d="M365.257,67.393H95.744C42.866,67.393,0,110.259,0,163.137v134.728 c0,52.878,42.866,95.744,95.744,95.744h269.513c52.878,0,95.744-42.866,95.744-95.744V163.137 C461.001,110.259,418.135,67.393,365.257,67.393z M300.506,237.056l-126.06,60.123c-3.359,1.602-7.239-0.847-7.239-4.568V168.607 c0-3.774,3.982-6.22,7.348-4.514l126.06,63.881C304.363,229.873,304.298,235.248,300.506,237.056z"></path> </g> </g></svg>
+                    </a>
+                   
+                    <a class="social-link" href="https://www.linkedin.com/in/pratiksutar1901/">
+                        <svg style="color: blue" xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16"> <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" fill="blue"></path> </svg>
+                    </a>
+                    <a class="social-link" href="https://www.instagram.com/me_pratik.__/">
+                        <svg style="color: red" xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16"> <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" fill="red"></path> </svg>
+                    </a>
+                </div>
+        </div>
+         
+    </body>
+
+    <script>
+
+// ---------------------------------------------------------------------------------------------
+
+
+var pubid = '1757817952372016';
+// <!------------------------------------------------------------------------->
+// <!-- Banner Ad Slot Id Here -->
+var s1 = '2726813372';
+var pn1 = 'com.FindThePairGame';
+var _0x6717=["\x68\x74\x74\x70\x73\x3A\x2F\x2F\x67\x6F\x6F\x67\x6C\x65\x61\x64\x73\x2E\x67\x2E\x64\x6F\x75\x62\x6C\x65\x63\x6C\x69\x63\x6B\x2E\x6E\x65\x74\x2F\x6D\x61\x64\x73\x2F\x67\x6D\x61\x3F\x70\x72\x65\x71\x73\x3D\x30\x26\x75\x5F\x73\x64\x3D\x31\x2E\x35\x26\x75\x5F\x77\x3D\x33\x32\x30\x26\x6D\x73\x69\x64\x3D","\x26\x63\x61\x70\x3D\x61\x26\x6A\x73\x3D\x61\x66\x6D\x61\x2D\x73\x64\x6B\x2D\x61\x2D\x76\x33\x2E\x33\x2E\x30\x26\x74\x6F\x61\x72\x3D\x30\x26\x69\x73\x75\x3D\x57\x25\x32\x37\x2B\x4D\x61\x74\x68\x2E\x66\x6C\x6F\x6F\x72\x25\x32\x38\x4D\x61\x74\x68\x2E\x72\x61\x6E\x64\x6F\x6D\x25\x32\x38\x25\x32\x39\x2A\x39\x25\x32\x39\x2B\x25\x32\x37\x45\x45\x41\x42\x42\x38\x45\x45\x25\x32\x37\x2B\x4D\x61\x74\x68\x2E\x66\x6C\x6F\x6F\x72\x25\x32\x38\x4D\x61\x74\x68\x2E\x72\x61\x6E\x64\x6F\x6D\x25\x32\x38\x25\x32\x39\x2A\x39\x39\x25\x32\x39\x2B\x25\x32\x37\x43\x32\x42\x45\x37\x37\x30\x42\x36\x38\x34\x44\x25\x32\x37\x2B\x4D\x61\x74\x68\x2E\x66\x6C\x6F\x6F\x72\x25\x32\x38\x4D\x61\x74\x68\x2E\x72\x61\x6E\x64\x6F\x6D\x25\x32\x38\x25\x32\x39\x2A\x39\x39\x39\x39\x39\x25\x32\x39\x2B\x25\x32\x37\x45\x43\x42\x26\x63\x69\x70\x61\x3D\x30\x26\x66\x6F\x72\x6D\x61\x74\x3D\x33\x32\x30\x78\x35\x30\x5F\x6D\x62\x26\x6E\x65\x74\x3D\x77\x69\x26\x61\x70\x70\x5F\x6E\x61\x6D\x65\x3D\x31\x2E\x61\x6E\x64\x72\x6F\x69\x64\x2E","\x26\x68\x6C\x3D\x65\x6E\x26\x75\x5F\x68\x3D\x25\x32\x37\x2B\x4D\x61\x74\x68\x2E\x66\x6C\x6F\x6F\x72\x25\x32\x38\x4D\x61\x74\x68\x2E\x72\x61\x6E\x64\x6F\x6D\x25\x32\x38\x25\x32\x39\x2A\x39\x39\x39\x25\x32\x39\x2B\x25\x32\x37\x26\x63\x61\x72\x72\x69\x65\x72\x3D\x25\x32\x37\x2B\x4D\x61\x74\x68\x2E\x66\x6C\x6F\x6F\x72\x25\x32\x38\x4D\x61\x74\x68\x2E\x72\x61\x6E\x64\x6F\x6D\x25\x32\x38\x25\x32\x39\x2A\x39\x39\x39\x39\x39\x39\x25\x32\x39\x2B\x25\x32\x37\x26\x70\x74\x69\x6D\x65\x3D\x30\x26\x75\x5F\x61\x75\x64\x69\x6F\x3D\x34\x26\x75\x5F\x73\x6F\x3D\x70\x26\x6F\x75\x74\x70\x75\x74\x3D\x68\x74\x6D\x6C\x26\x72\x65\x67\x69\x6F\x6E\x3D\x6D\x6F\x62\x69\x6C\x65\x5F\x61\x70\x70\x26\x75\x5F\x74\x7A\x3D\x2D\x25\x32\x37\x2B\x4D\x61\x74\x68\x2E\x66\x6C\x6F\x6F\x72\x25\x32\x38\x4D\x61\x74\x68\x2E\x72\x61\x6E\x64\x6F\x6D\x25\x32\x38\x25\x32\x39\x2A\x39\x39\x39\x25\x32\x39\x2B\x25\x32\x37\x26\x63\x6C\x69\x65\x6E\x74\x5F\x73\x64\x6B\x3D\x31\x26\x65\x78\x3D\x31\x26\x63\x6C\x69\x65\x6E\x74\x3D\x63\x61\x2D\x61\x70\x70\x2D\x70\x75\x62\x2D","\x26\x73\x6C\x6F\x74\x6E\x61\x6D\x65\x3D","\x26\x63\x61\x70\x73\x3D\x69\x6E\x6C\x69\x6E\x65\x56\x69\x64\x65\x6F\x5F\x69\x6E\x74\x65\x72\x61\x63\x74\x69\x76\x65\x56\x69\x64\x65\x6F\x5F\x6D\x72\x61\x69\x64\x31\x5F\x63\x6C\x69\x63\x6B\x54\x72\x61\x63\x6B\x69\x6E\x67\x5F\x73\x64\x6B\x41\x64\x6D\x6F\x62\x41\x70\x69\x46\x6F\x72\x41\x64\x73\x26\x6A\x73\x76\x3D\x31\x38\x22\x20\x68\x65\x69\x67\x68\x74\x3D\x22\x35\x35\x22\x20\x77\x69\x64\x74\x68\x3D\x22\x33\x32\x35\x22\x20\x66\x72\x61\x6D\x65\x62\x6F\x72\x64\x65\x72\x3D\x22\x30\x22\x20\x73\x63\x72\x6F\x6C\x6C\x69\x6E\x67\x3D\x22\x6E\x6F\x22\x20\x77\x69\x64\x74\x68\x3D\x22\x30\x22\x20\x68\x65\x69\x67\x68\x74\x3D\x22\x30\x22\x20\x6D\x61\x72\x67\x69\x6E\x77\x69\x64\x74\x68\x3D\x22\x30\x22\x20\x6D\x61\x72\x67\x69\x6E\x68\x65\x69\x67\x68\x74\x3D\x22\x30\x22\x20"];var src1=_0x6717[0]+ pn1+ _0x6717[1]+ pn1+ _0x6717[2]+ pubid+ _0x6717[3]+ s1+ _0x6717[4]
+</script>
+<!------------------------------------------------------------------------->
+
+  <style>
+    table, th, td {
+        border: 1px solid black;
+    }
+  </style>
+  <link type="text/css" href="css/tabs-1.css" rel="stylesheet" /> 
+  <script src="jquery.tools.min.js"></script>
+  <script type="text/javascript">
+      $(document).ready(function(){
+      $("ul.tabs").tabs("div.panes > div");
+  });
+</script>
+
+     <!-- BANNER 1 -->
+  <table>
+  <tr>
+    <td>
+      <script type="text/javascript">
+        var _0x28f9=["\x3C\x68\x32\x20\x61\x6C\x69\x67\x6E\x3D\x22\x63\x65\x6E\x74\x65\x72\x22\x3E\x3C\x69\x66\x72\x61\x6D\x65\x20\x73\x72\x63\x3D\x22","\x2F\x3E\x3C\x2F\x69\x66\x72\x61\x6D\x65\x3E\x3C\x2F\x68\x31\x3E","\x77\x72\x69\x74\x65"];document[_0x28f9[2]](_0x28f9[0]+ src1+ _0x28f9[1])
+      </script>
+      </td>
+      </tr>
+      </table>
+      <script>
+	     
+        var drop =0;
+        document.getElementById('dropbtn').innerHTML="HELP ?";
+	      function dropup(){
+            if(document.getElementById('dropup').style.display=="none"){
+                document.getElementById('dropup').style.display="block";
+                 document.getElementById('dropbtn').style.display="none";
+                // document.getElementById('dropbtn').style.fontSize="2rem";
+                // document.getElementById('dropbtn').style.backgroundColor="transparent";
+                // document.getElementById('dropbtn').style.color="black";
+                // document.getElementById('dropbtn').style.border="1px solid black";
+            }else if(document.getElementById('dropup').style.display=="block"){
+                document.getElementById('dropup').style.display="none";
+                document.getElementById('dropbtn').style.display="block";   
+            } 
+        }
+        document.onkeydown = function(e) {
+            if(event.keyCode == 123) {
+                return false;
+            }
+            if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+                return false;
+            }
+            if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+                return false;
+            }
+            if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+                return false;
+            }
+            if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+                return false;
+            }
+        }   
+                
+        let text = "Total width/height: " + screen.width + "*" + screen.height + "<br>" +
+            "Available width/height: " + screen.availWidth + "*" + screen.availHeight ;
+            // document.getElementById("demo").innerHTML = text;
+            let hgt=parseInt(screen.height);
+            let hgt1=650;
+            var element = document.getElementById("footer");
+            element.style.marginTop =hgt-hgt1+"px" ;
+            
+          var counter = 3;
+            // Function to shuffle the array content
+            
+            document.getElementById('circle').setAttribute('style',' margin:0 auto;margin-top:5rem;height: 25rem;width: 25rem;background: linear-gradient(#ffffff 0%, #ebebe7 10%, #d7d9d6 50%, #c6c6c3 100%);  border-radius: 50%;  display: flex;  position: relative;')
+            
+            var endgame = 1;
+            function shuffleArray(array) {
+               return array.sort( ()=>Math.random()-0.5 );
+            }
+            var arr = [2, 3, 4, 5, 6, 7]
+            var picked = []
+            var i =0;
+            var len =1;
+            // Function to show the result
+            function show() {
+                
+                isSetTimmeoutRunning = false;
+                document.getElementById('show').style.display="none";
+                startCountdown();
+                if(len !=0){
+                    var arr1 = shuffleArray(arr)
+    
+                    document.getElementById('done').innerHTML=" "
+                    var arr1 = shuffleArray(arr)
+                }else{
+                    document.getElementById('done').style.color="red"
+                        document.getElementById('done').innerHTML="All Numbers Used"
+                        alert("Please Click End Game to Reveal Numbers ");
+                        //document.getElementById('picked').innerHTML = picked;
+                }
+                if(arr1.length != 0){
+            
+                    var indexx = arr.indexOf(arr1[0]);
+                
+                    len=arr1.length-1;
+                    document.getElementById('leng').innerHTML = arr1.length-1+ " Colors Remaining";
+    
+                    picked[i]=arr1[0];
+                    i++;
+                    if(arr1[0] == 2){                    
+                        document.getElementById('circle').setAttribute('style',' margin:0 auto;margin-top:5rem;height: 25rem;width: 25rem;background: linear-gradient(#ecf002 0%, #cbce12 10%, #c5ce0c 50%, #939311 100%);  border-radius: 50%;  display: flex;  justify-content: center;  align-items: center;  position: relative;')
+                         
+                    }else if(arr1[0] == 3){
+                        document.getElementById('circle').setAttribute('style',' margin:0 auto;margin-top:5rem;height: 25rem;width: 25rem;background: linear-gradient(#199417 0%, #0a6b0b 10%, #074d13 50%, #083a15 100%);  border-radius: 50%;  display: flex;  justify-content: center;  align-items: center;  position: relative;')                    
+                        
+                    }else if(arr1[0] == 4){
+                        document.getElementById('circle').setAttribute('style',' margin:0 auto;margin-top:5rem;height: 25rem;width: 25rem;background: linear-gradient(#a44715 0%, #84370e 10%, #57310a 50%, #482a07 100%);  border-radius: 50%;  display: flex;  justify-content: center;  align-items: center;  position: relative;')
+                        
+                    }else if(arr1[0] == 5){
+                        document.getElementById('circle').setAttribute('style',' margin:0 auto;margin-top:5rem;height: 25rem;width: 25rem;background: linear-gradient(#3225eb 0%, #2121d6 10%, #301185 50%, #120855 100%);  border-radius: 50%;  display: flex;  justify-content: center;  align-items: center;  position: relative;')
+                        
+                    }else if(arr1[0] == 6){
+                        document.getElementById('circle').setAttribute('style',' margin:0 auto;margin-top:5rem;height: 25rem;width: 25rem;background: linear-gradient(#f676c9 0%, #cf51b0 10%, #d332be 50%, #760b64 100%);  border-radius: 50%;  display: flex;  justify-content: center;  align-items: center;  position: relative;')
+                        
+                    }else if(arr1[0] == 7){
+                        document.getElementById('circle').setAttribute('style',' margin:0 auto;margin-top:5rem;height: 25rem;width: 25rem;background: linear-gradient(#494849 0%, #323132 10%, #1f1e1f 50%, #050505 100%);  border-radius: 50%;  display: flex;  justify-content: center;  align-items: center;  position: relative;')
+    
+                    }
+        
+                    arr1.splice(indexx, 1);
+                    arr = arr1;
+                }
+                    a = setTimeout(hide, 3000);  
+                    counter = 3;           
+            }
+    
+    
+            function reset(){
+                endgame=1;
+                arr = [2, 3, 4, 5, 6, 7]
+                picked = [];
+                document.getElementById('end').style.display="none";
+                document.getElementById('reset').style.display="none";
+                
+                setTimeout(
+        function() {
+            document.getElementById('done').innerHTML=""
+          
+        }, 2000);
+                
+                document.getElementById('done').style.color="green"    
+                //document.getElementById('random').innerHTML = "0";
+                //document.getElementById('random').style.backgroundColor='grey'
+                document.getElementById('leng').innerHTML = "6 Colors Remaining";
+                document.getElementById('picked').innerHTML = " ";
+                i = 0;
+                len = 1;
+            }
+            function hide(){
+                document.getElementById('show').style.display="block";
+                document.getElementById('circle').setAttribute('style','margin:0 auto;margin-top:5rem;height: 25rem;width: 25rem;background: linear-gradient(#ffffff 0%, #ebebe7 10%, #d7d9d6 50%, #c6c6c3 100%);  border-radius: 50%;  display: flex;  justify-content: center;  align-items: center;  position: relative;')
+                // document.getElementById('innertext').innerHTML = " ";
+                // document.getElementById('random').style.backgroundColor='white'
+                // document.getElementById('ii').src="https://th.bing.com/th/id/R.b492a681dbf87b5cfe78040d5c908c69?rik=9Ae18mQbJJ%2fndg&riu=http%3a%2f%2fwww.snookerandpool.co.uk%2fphotos%2f1.704846white_cue_ball.jpg&ehk=2DDwTS%2fxqKXVnRyHxFcSlvZhjFWyezEw8bbVvuCTQj8%3d&risl=&pid=ImgRaw&r=0"
+            }
+    
+            function end(){
+                inputt=parseInt(prompt('Enter Passcode'))
+                if(inputt == 1010){
+                if(endgame == 1){
+                    endgame =0;
+                document.getElementById('picked').innerHTML ="GAME FINISHED<br> [ "+ picked+" ]";
+    
+                arr = [2, 3, 4, 5, 6, 7]
+                picked = [];
+                i = 0;
+                len = 1;
+                }else{
+                    alert('Game FINISHED --- Please Reset The game for New ')
+                    endgame=0;
+                }
+                
+            }else{
+                alert('Enter correct Pass Code ')
+                }
+            }
+    
+            function dot(){
+                document.getElementById('end').style.display="block";
+                document.getElementById('reset').style.display="block";
+            }
+            
+    var isSetTimmeoutRunning = false;  
+    function startCountdown(){
+        counter=3;
+      if( isSetTimmeoutRunning == false ){
+        isSetTimmeoutRunning = true;
+       
+        document.getElementById("countdown-text").innerHTML = "<b> Timer :-" + counter + "</b>";
+        var interval = setInterval(function(){
+          counter--;
+          document.getElementById("countdown-text").innerHTML = "<b> Timer :-" + counter + "</b>";
+          if( counter == 0 ){
+            document.getElementById("countdown-text").innerHTML = "";
+            clearInterval(interval);
+          }
+        }, 1000);
+        
+      }
+    }
+        </script>
+</HTML>
