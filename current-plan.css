@@ -1,0 +1,296 @@
+.group-child {
+  position: absolute;
+  top: 31px;
+  left: calc(50% - 170px);
+  border-radius: var(--br-lg);
+  background-color: var(--color-white);
+  box-shadow: 2px 4px 15px 2px rgba(0, 0, 0, 0.25);
+  width: 340px;
+  height: 125px;
+}
+.group-item {
+  position: absolute;
+  top: 47px;
+  left: 169.5px;
+  width: 1px;
+  height: 85.5px;
+  object-fit: cover;
+}
+.group-inner {
+  position: absolute;
+  top: 1px;
+  left: 0px;
+  border-radius: var(--br-2xs);
+  background-color: var(--color-white);
+  box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.25);
+  width: 298px;
+  height: 22px;
+}
+.username-pratik-sutar {
+  position: absolute;
+  top: 0px;
+  left: calc(50% - 73px);
+  display: inline-block;
+  width: 144px;
+  height: 12px;
+}
+.rectangle-group {
+  position: absolute;
+  top: 0px;
+  left: 19px;
+  width: 298px;
+  height: 23px;
+  font-size: var(--font-size-2xs);
+  color: var(--color-darkslateblue);
+}
+.ul50-3-days-589 {
+  position: absolute;
+  top: 49px;
+  left: 193px;
+  font-size: var(--font-size-3xs);
+  display: inline-block;
+  width: 100px;
+  height: 13px;
+}
+.plan-status {
+  position: absolute;
+  top: 49px;
+  left: 34px;
+  display: inline-block;
+  width: 100px;
+  height: 13px;
+}
+.div {
+  position: absolute;
+  top: 75px;
+  left: calc(50% - 106px);
+  color: var(--color-cornflowerblue);
+  display: inline-block;
+  width: 37px;
+  height: 14px;
+}
+.days-remaining {
+  position: absolute;
+  top: 93px;
+  left: 42px;
+  color: var(--color-cornflowerblue);
+  display: inline-block;
+  width: 78px;
+  height: 14px;
+}
+.expires-21-oct-2023 {
+  position: absolute;
+  top: 111px;
+  left: 41px;
+  font-size: var(--font-size-5xs);
+  display: inline-block;
+  width: 78px;
+  height: 14px;
+}
+.rectangle-icon {
+  position: absolute;
+  top: -5px;
+  left: -10px;
+  border-radius: var(--br-lg);
+  width: 106px;
+  height: 37px;
+  object-fit: cover;
+}
+.renew-plan {
+  position: absolute;
+  top: 3.12px;
+  left: calc(50% - 31px);
+  display: inline-block;
+  width: 61.17px;
+}
+.vector-parent {
+  position: absolute;
+  top: 97px;
+  left: 197px;
+  width: 86px;
+  height: 17px;
+  font-size: var(--font-size-5xs);
+  color: var(--color-white);
+}
+.rectangle-parent {
+  position: absolute;
+  top: 75px;
+  left: calc(50% - 168px);
+  width: 340px;
+  height: 156px;
+  color: var(--color-black);
+}
+.toolbar-item {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-radius: 0px 0px 0px var(--br-8xs);
+  background-color: var(--color-steelblue-100);
+  width: 360px;
+  height: 70px;
+}
+.credit-card-icon1 {
+  position: absolute;
+  top: 10px;
+  left: 240px;
+  width: 25px;
+  height: 30px;
+  overflow: hidden;
+  object-fit: cover;
+}
+.hourglass-icon1 {
+  position: absolute;
+  top: 11px;
+  left: 302px;
+  width: 21px;
+  height: 24px;
+  overflow: hidden;
+  object-fit: cover;
+}
+.daashboard1 {
+  position: absolute;
+  top: 43px;
+  left: calc(50% - 178px);
+  display: inline-block;
+  width: 74px;
+  height: 11px;
+}
+.current-plan1 {
+  position: absolute;
+  top: 43px;
+  left: calc(50% - 106px);
+  display: inline-block;
+  width: 74px;
+  height: 11px;
+}
+.invoice2 {
+  position: absolute;
+  top: 43px;
+  left: calc(50% - 38px);
+  display: inline-block;
+  width: 74px;
+  height: 11px;
+}
+.payment1 {
+  position: absolute;
+  top: 43px;
+  left: calc(50% + 45px);
+  display: inline-block;
+  width: 55px;
+  height: 11px;
+}
+.support1 {
+  position: absolute;
+  top: 41px;
+  left: calc(50% + 105px);
+  display: inline-block;
+  width: 55px;
+  height: 11px;
+}
+.book-icon1 {
+  position: absolute;
+  top: 11px;
+  left: 167px;
+  width: 29px;
+  height: 25px;
+  overflow: hidden;
+  object-fit: cover;
+  cursor: pointer;
+}
+.home-icon1 {
+  position: absolute;
+  top: 7px;
+  left: 20px;
+  width: 35px;
+  height: 33px;
+  overflow: hidden;
+  object-fit: cover;
+  cursor: pointer;
+}
+.tachometer-alt-icon1 {
+  position: absolute;
+  top: 8px;
+  left: 96px;
+  width: 30px;
+  height: 29px;
+  overflow: hidden;
+  object-fit: cover;
+}
+.toolbar1 {
+  position: absolute;
+  top: 732px;
+  left: 0px;
+  width: 360px;
+  height: 70px;
+  font-size: var(--font-size-5xs);
+}
+.header-inner {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-radius: 0px 0px 0px var(--br-mini);
+  background-color: var(--color-steelblue-100);
+  width: 360px;
+  height: 48px;
+}
+.dashboard1 {
+  position: absolute;
+  top: 10px;
+  left: 81px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 87px;
+  mix-blend-mode: normal;
+}
+.vector-icon1 {
+  position: absolute;
+  height: 41.57%;
+  width: 3.89%;
+  top: 26.9%;
+  right: 17.22%;
+  bottom: 31.53%;
+  left: 78.89%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.group-icon {
+  position: absolute;
+  top: 13px;
+  left: 318px;
+  width: 27px;
+  height: 13px;
+  object-fit: cover;
+}
+.bars-icon1 {
+  position: absolute;
+  top: 11px;
+  left: 11px;
+  width: 17px;
+  height: 15px;
+  overflow: hidden;
+  object-fit: cover;
+}
+.header1 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 360px;
+  height: 48px;
+  font-size: var(--font-size-mini);
+  font-family: var(--font-actor);
+}
+.currentplan {
+  position: relative;
+  border-radius: var(--br-6xs);
+  background-color: var(--color-whitesmoke);
+  width: 100%;
+  height: 939px;
+  overflow-y: auto;
+  text-align: center;
+  font-size: var(--font-size-4xs);
+  color: var(--color-white);
+  font-family: var(--font-lao-sans-pro);
+}

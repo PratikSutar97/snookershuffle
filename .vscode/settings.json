@@ -1,0 +1,14 @@
+{
+  "locofyConfig": {
+    "project": "Packenet",
+    "id": "651aba0b42d2513cf8ca2d5d",
+    "framework": "html-css",
+    "typescript": false,
+    "styling": "CSS",
+    "unit": "px",
+    "naming": "Kebab Case",
+    "path": "public/",
+    "componentsPath": "c:\\Users\\prati\\source\\repos\\snookershuffle\\src\\components",
+    "screensPath": "c:\\Users\\prati\\source\\repos\\snookershuffle\\src\\pages"
+  }
+}
