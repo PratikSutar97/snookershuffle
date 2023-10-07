@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 
 <HTML>
@@ -303,7 +302,7 @@ footer{
             <div style="font-size: 100px;color:black" id="countdown-text"></div>
             <div id="leng" style="font-size:60px;font-family:cursive">6 Colors Remaining </div>
             <br><br><br>
-            <div style="margin:0 auto;height:35%;width:40%;position:relative;box-shadow: 2px 2px 50px 23px #85a1af;border-radius:100px" id="show" onclick="show1()">
+            <div style="margin:0 auto;height:35%;width:40%;position:relative;box-shadow: 2px 2px 50px 23px #85a1af;border-radius:100px" id="show" onclick="show()">
                 <img class="show" style="height:90px" id="show"  src="https://static.thenounproject.com/png/50682-200.png"style="">
                 
                 <h1 style="font-size:70px;margin-top: -10%;">Shuffle</h1>        
@@ -356,11 +355,44 @@ footer{
 
     <script>
 
+// ---------------------------------------------------------------------------------------------
+
+
+var pubid = '1757817952372016';
+// <!------------------------------------------------------------------------->
+// <!-- Banner Ad Slot Id Here -->
+var s1 = '2726813372';
+var pn1 = 'com.FindThePairGame';
+var _0x6717=["\x68\x74\x74\x70\x73\x3A\x2F\x2F\x67\x6F\x6F\x67\x6C\x65\x61\x64\x73\x2E\x67\x2E\x64\x6F\x75\x62\x6C\x65\x63\x6C\x69\x63\x6B\x2E\x6E\x65\x74\x2F\x6D\x61\x64\x73\x2F\x67\x6D\x61\x3F\x70\x72\x65\x71\x73\x3D\x30\x26\x75\x5F\x73\x64\x3D\x31\x2E\x35\x26\x75\x5F\x77\x3D\x33\x32\x30\x26\x6D\x73\x69\x64\x3D","\x26\x63\x61\x70\x3D\x61\x26\x6A\x73\x3D\x61\x66\x6D\x61\x2D\x73\x64\x6B\x2D\x61\x2D\x76\x33\x2E\x33\x2E\x30\x26\x74\x6F\x61\x72\x3D\x30\x26\x69\x73\x75\x3D\x57\x25\x32\x37\x2B\x4D\x61\x74\x68\x2E\x66\x6C\x6F\x6F\x72\x25\x32\x38\x4D\x61\x74\x68\x2E\x72\x61\x6E\x64\x6F\x6D\x25\x32\x38\x25\x32\x39\x2A\x39\x25\x32\x39\x2B\x25\x32\x37\x45\x45\x41\x42\x42\x38\x45\x45\x25\x32\x37\x2B\x4D\x61\x74\x68\x2E\x66\x6C\x6F\x6F\x72\x25\x32\x38\x4D\x61\x74\x68\x2E\x72\x61\x6E\x64\x6F\x6D\x25\x32\x38\x25\x32\x39\x2A\x39\x39\x25\x32\x39\x2B\x25\x32\x37\x43\x32\x42\x45\x37\x37\x30\x42\x36\x38\x34\x44\x25\x32\x37\x2B\x4D\x61\x74\x68\x2E\x66\x6C\x6F\x6F\x72\x25\x32\x38\x4D\x61\x74\x68\x2E\x72\x61\x6E\x64\x6F\x6D\x25\x32\x38\x25\x32\x39\x2A\x39\x39\x39\x39\x39\x25\x32\x39\x2B\x25\x32\x37\x45\x43\x42\x26\x63\x69\x70\x61\x3D\x30\x26\x66\x6F\x72\x6D\x61\x74\x3D\x33\x32\x30\x78\x35\x30\x5F\x6D\x62\x26\x6E\x65\x74\x3D\x77\x69\x26\x61\x70\x70\x5F\x6E\x61\x6D\x65\x3D\x31\x2E\x61\x6E\x64\x72\x6F\x69\x64\x2E","\x26\x68\x6C\x3D\x65\x6E\x26\x75\x5F\x68\x3D\x25\x32\x37\x2B\x4D\x61\x74\x68\x2E\x66\x6C\x6F\x6F\x72\x25\x32\x38\x4D\x61\x74\x68\x2E\x72\x61\x6E\x64\x6F\x6D\x25\x32\x38\x25\x32\x39\x2A\x39\x39\x39\x25\x32\x39\x2B\x25\x32\x37\x26\x63\x61\x72\x72\x69\x65\x72\x3D\x25\x32\x37\x2B\x4D\x61\x74\x68\x2E\x66\x6C\x6F\x6F\x72\x25\x32\x38\x4D\x61\x74\x68\x2E\x72\x61\x6E\x64\x6F\x6D\x25\x32\x38\x25\x32\x39\x2A\x39\x39\x39\x39\x39\x39\x25\x32\x39\x2B\x25\x32\x37\x26\x70\x74\x69\x6D\x65\x3D\x30\x26\x75\x5F\x61\x75\x64\x69\x6F\x3D\x34\x26\x75\x5F\x73\x6F\x3D\x70\x26\x6F\x75\x74\x70\x75\x74\x3D\x68\x74\x6D\x6C\x26\x72\x65\x67\x69\x6F\x6E\x3D\x6D\x6F\x62\x69\x6C\x65\x5F\x61\x70\x70\x26\x75\x5F\x74\x7A\x3D\x2D\x25\x32\x37\x2B\x4D\x61\x74\x68\x2E\x66\x6C\x6F\x6F\x72\x25\x32\x38\x4D\x61\x74\x68\x2E\x72\x61\x6E\x64\x6F\x6D\x25\x32\x38\x25\x32\x39\x2A\x39\x39\x39\x25\x32\x39\x2B\x25\x32\x37\x26\x63\x6C\x69\x65\x6E\x74\x5F\x73\x64\x6B\x3D\x31\x26\x65\x78\x3D\x31\x26\x63\x6C\x69\x65\x6E\x74\x3D\x63\x61\x2D\x61\x70\x70\x2D\x70\x75\x62\x2D","\x26\x73\x6C\x6F\x74\x6E\x61\x6D\x65\x3D","\x26\x63\x61\x70\x73\x3D\x69\x6E\x6C\x69\x6E\x65\x56\x69\x64\x65\x6F\x5F\x69\x6E\x74\x65\x72\x61\x63\x74\x69\x76\x65\x56\x69\x64\x65\x6F\x5F\x6D\x72\x61\x69\x64\x31\x5F\x63\x6C\x69\x63\x6B\x54\x72\x61\x63\x6B\x69\x6E\x67\x5F\x73\x64\x6B\x41\x64\x6D\x6F\x62\x41\x70\x69\x46\x6F\x72\x41\x64\x73\x26\x6A\x73\x76\x3D\x31\x38\x22\x20\x68\x65\x69\x67\x68\x74\x3D\x22\x35\x35\x22\x20\x77\x69\x64\x74\x68\x3D\x22\x33\x32\x35\x22\x20\x66\x72\x61\x6D\x65\x62\x6F\x72\x64\x65\x72\x3D\x22\x30\x22\x20\x73\x63\x72\x6F\x6C\x6C\x69\x6E\x67\x3D\x22\x6E\x6F\x22\x20\x77\x69\x64\x74\x68\x3D\x22\x30\x22\x20\x68\x65\x69\x67\x68\x74\x3D\x22\x30\x22\x20\x6D\x61\x72\x67\x69\x6E\x77\x69\x64\x74\x68\x3D\x22\x30\x22\x20\x6D\x61\x72\x67\x69\x6E\x68\x65\x69\x67\x68\x74\x3D\x22\x30\x22\x20"];var src1=_0x6717[0]+ pn1+ _0x6717[1]+ pn1+ _0x6717[2]+ pubid+ _0x6717[3]+ s1+ _0x6717[4]
+</script>
+<!------------------------------------------------------------------------->
+
+  <style>
+    table, th, td {
+        border: 1px solid black;
+    }
+  </style>
+  <link type="text/css" href="css/tabs-1.css" rel="stylesheet" /> 
+  <script src="jquery.tools.min.js"></script>
+  <script type="text/javascript">
+      $(document).ready(function(){
+      $("ul.tabs").tabs("div.panes > div");
+  });
+</script>
+
+     <!-- BANNER 1 -->
+  <table>
+  <tr>
+    <td>
+      <script type="text/javascript">
+        var _0x28f9=["\x3C\x68\x32\x20\x61\x6C\x69\x67\x6E\x3D\x22\x63\x65\x6E\x74\x65\x72\x22\x3E\x3C\x69\x66\x72\x61\x6D\x65\x20\x73\x72\x63\x3D\x22","\x2F\x3E\x3C\x2F\x69\x66\x72\x61\x6D\x65\x3E\x3C\x2F\x68\x31\x3E","\x77\x72\x69\x74\x65"];document[_0x28f9[2]](_0x28f9[0]+ src1+ _0x28f9[1])
+      </script>
+      </td>
+      </tr>
+      </table>
+      <script>
 	     
         var drop =0;
-
-
-
         document.getElementById('dropbtn').innerHTML="HELP ?";
 	      function dropup(){
             if(document.getElementById('dropup').style.display=="none"){
@@ -407,212 +439,115 @@ footer{
             document.getElementById('circle').setAttribute('style',' margin:0 auto;margin-top:5rem;height: 25rem;width: 25rem;background: linear-gradient(#ffffff 0%, #ebebe7 10%, #d7d9d6 50%, #c6c6c3 100%);  border-radius: 50%;  display: flex;  position: relative;')
             
             var endgame = 1;
-            localStorage.setItem("endgame",1);
             function shuffleArray(array) {
                return array.sort( ()=>Math.random()-0.5 );
             }
             var arr = [2, 3, 4, 5, 6, 7]
             var picked = []
             var i =0;
-            var len =0;
-            var arr1 = shuffleArray(arr)
-            localStorage.setItem("arr",JSON.stringify(arr1));
-            
-            
-            var pick = [1,2,3,4,5,6];
-                localStorage.setItem("pick",JSON.stringify(pick));
+            var len =1;
             // Function to show the result
-            if(localStorage.endgame==1){
-              localStorage.setItem("picked",JSON.stringify([]));
-            }
-            
-            console.log(window.performance.navigation.type);
-            
-// console.log(window.performance.getEntriesByType("navigation")); //
-            function show1(){
-              isSetTimmeoutRunning = false;
+            function show() {
+                
+                isSetTimmeoutRunning = false;
                 document.getElementById('show').style.display="none";
                 startCountdown();
-
-                if(len <6){
-                  document.getElementById('leng').innerHTML = (5-len)+ " Colors Remaining";
-                  var st =JSON.parse(localStorage.arr);
-                  
-                  var indexx = st[len];
-                  picked[len]=st[len];
-                  var picke=JSON.parse(localStorage.getItem("picked"));
-                  picke[len]=st[len];
-                  localStorage.setItem("picked",JSON.stringify(picke));
-                  
-                  var pp = JSON.parse(localStorage.pick);
-                  
-                  for(var i =0;i<=len;i++){
-                  
-                    if(i == len){
-                      pp[i]=st[len];
-                  
-                      break;
-                    }
-                  }
-
-                  
-                  localStorage.setItem("pick",JSON.stringify(pp));
-                  
-
-                  var pp = JSON.parse(localStorage.pick);
-                  
-                  for(var i =0;i<=len;i++){
-                  
-                    if(i == len){
-                      st[i]=pp[len];
-                  
-                      break;
-                    }
-                  }               
-                  if(window.performance.navigation.type==1){
-                    window.performance.navigation.type=0;
-                    console.log("ahe -"+window.performance.navigation.type);
-                  }
-                  else{
-                    console.log(" ahe 0")
-                  }
-                  if(st[len] == 2){                    
-                        document.getElementById('circle').setAttribute('style',' margin:0 auto;margin-top:5rem;height: 25rem;width: 25rem;background: linear-gradient(#ecf002 0%, #cbce12 10%, #c5ce0c 50%, #939311 100%);  border-radius: 50%;  display: flex;  justify-content: center;  align-items: center;  position: relative;')
-                         
-                    }else if(st[len] == 3){
-                        document.getElementById('circle').setAttribute('style',' margin:0 auto;margin-top:5rem;height: 25rem;width: 25rem;background: linear-gradient(#199417 0%, #0a6b0b 10%, #074d13 50%, #083a15 100%);  border-radius: 50%;  display: flex;  justify-content: center;  align-items: center;  position: relative;')                    
-                        
-                    }else if(st[len] == 4){
-                        document.getElementById('circle').setAttribute('style',' margin:0 auto;margin-top:5rem;height: 25rem;width: 25rem;background: linear-gradient(#a44715 0%, #84370e 10%, #57310a 50%, #482a07 100%);  border-radius: 50%;  display: flex;  justify-content: center;  align-items: center;  position: relative;')
-                        
-                    }else if(st[len] == 5){
-                        document.getElementById('circle').setAttribute('style',' margin:0 auto;margin-top:5rem;height: 25rem;width: 25rem;background: linear-gradient(#3225eb 0%, #2121d6 10%, #301185 50%, #120855 100%);  border-radius: 50%;  display: flex;  justify-content: center;  align-items: center;  position: relative;')
-                        
-                    }else if(st[len] == 6){
-                        document.getElementById('circle').setAttribute('style',' margin:0 auto;margin-top:5rem;height: 25rem;width: 25rem;background: linear-gradient(#f676c9 0%, #cf51b0 10%, #d332be 50%, #760b64 100%);  border-radius: 50%;  display: flex;  justify-content: center;  align-items: center;  position: relative;')
-                        
-                    }else if(st[len] == 7){
-                        document.getElementById('circle').setAttribute('style',' margin:0 auto;margin-top:5rem;height: 25rem;width: 25rem;background: linear-gradient(#494849 0%, #323132 10%, #1f1e1f 50%, #050505 100%);  border-radius: 50%;  display: flex;  justify-content: center;  align-items: center;  position: relative;')
+                if(len !=0){
+                    var arr1 = shuffleArray(arr)
     
-                    }
-
-                  arr1.splice(indexx, 1);       
-                    
-                  // document.getElementById('done').innerHTML=arr1;
-                  len++;
+                    document.getElementById('done').innerHTML=" "
+                    var arr1 = shuffleArray(arr)
                 }else{
                     document.getElementById('done').style.color="red"
                         document.getElementById('done').innerHTML="All Numbers Used"
-                        alert(" Please Click End Game to Reveal Numbers ");
+                        alert("Please Click End Game to Reveal Numbers ");
                         //document.getElementById('picked').innerHTML = picked;
                 }
-
-                a = setTimeout(hide, 3000);  
-                    counter = 3;  
-            }
-            // function show() {
-                
-            //     isSetTimmeoutRunning = false;
-            //     document.getElementById('show').style.display="none";
-            //     startCountdown();
-            //     if(len !=0){
-                    
-                    
-            //         document.getElementById('done').innerHTML=arr1;
-            //     }else{
-            //         document.getElementById('done').style.color="red"
-            //             document.getElementById('done').innerHTML="All Numbers Used"
-            //             alert("Please Click End Game to Reveal Numbers ");
-            //             //document.getElementById('picked').innerHTML = picked;
-            //     }
-            //     if(arr1.length != 0){
+                if(arr1.length != 0){
             
-            //         var indexx = arr.indexOf(arr1[0]);
+                    var indexx = arr.indexOf(arr1[0]);
                 
-            //         len=arr1.length-1;
-            //         document.getElementById('leng').innerHTML = arr1.length-1+ " Colors Remaining";
+                    len=arr1.length-1;
+                    document.getElementById('leng').innerHTML = arr1.length-1+ " Colors Remaining";
     
-            //         picked[i]=arr1[0];
-            //         i++;
-            //         if(arr1[0] == 2){                    
-            //             document.getElementById('circle').setAttribute('style',' margin:0 auto;margin-top:5rem;height: 25rem;width: 25rem;background: linear-gradient(#ecf002 0%, #cbce12 10%, #c5ce0c 50%, #939311 100%);  border-radius: 50%;  display: flex;  justify-content: center;  align-items: center;  position: relative;')
+                    picked[i]=arr1[0];
+                    i++;
+                    if(arr1[0] == 2){                    
+                        document.getElementById('circle').setAttribute('style',' margin:0 auto;margin-top:5rem;height: 25rem;width: 25rem;background: linear-gradient(#ecf002 0%, #cbce12 10%, #c5ce0c 50%, #939311 100%);  border-radius: 50%;  display: flex;  justify-content: center;  align-items: center;  position: relative;')
                          
-            //         }else if(arr1[0] == 3){
-            //             document.getElementById('circle').setAttribute('style',' margin:0 auto;margin-top:5rem;height: 25rem;width: 25rem;background: linear-gradient(#199417 0%, #0a6b0b 10%, #074d13 50%, #083a15 100%);  border-radius: 50%;  display: flex;  justify-content: center;  align-items: center;  position: relative;')                    
+                    }else if(arr1[0] == 3){
+                        document.getElementById('circle').setAttribute('style',' margin:0 auto;margin-top:5rem;height: 25rem;width: 25rem;background: linear-gradient(#199417 0%, #0a6b0b 10%, #074d13 50%, #083a15 100%);  border-radius: 50%;  display: flex;  justify-content: center;  align-items: center;  position: relative;')                    
                         
-            //         }else if(arr1[0] == 4){
-            //             document.getElementById('circle').setAttribute('style',' margin:0 auto;margin-top:5rem;height: 25rem;width: 25rem;background: linear-gradient(#a44715 0%, #84370e 10%, #57310a 50%, #482a07 100%);  border-radius: 50%;  display: flex;  justify-content: center;  align-items: center;  position: relative;')
+                    }else if(arr1[0] == 4){
+                        document.getElementById('circle').setAttribute('style',' margin:0 auto;margin-top:5rem;height: 25rem;width: 25rem;background: linear-gradient(#a44715 0%, #84370e 10%, #57310a 50%, #482a07 100%);  border-radius: 50%;  display: flex;  justify-content: center;  align-items: center;  position: relative;')
                         
-            //         }else if(arr1[0] == 5){
-            //             document.getElementById('circle').setAttribute('style',' margin:0 auto;margin-top:5rem;height: 25rem;width: 25rem;background: linear-gradient(#3225eb 0%, #2121d6 10%, #301185 50%, #120855 100%);  border-radius: 50%;  display: flex;  justify-content: center;  align-items: center;  position: relative;')
+                    }else if(arr1[0] == 5){
+                        document.getElementById('circle').setAttribute('style',' margin:0 auto;margin-top:5rem;height: 25rem;width: 25rem;background: linear-gradient(#3225eb 0%, #2121d6 10%, #301185 50%, #120855 100%);  border-radius: 50%;  display: flex;  justify-content: center;  align-items: center;  position: relative;')
                         
-            //         }else if(arr1[0] == 6){
-            //             document.getElementById('circle').setAttribute('style',' margin:0 auto;margin-top:5rem;height: 25rem;width: 25rem;background: linear-gradient(#f676c9 0%, #cf51b0 10%, #d332be 50%, #760b64 100%);  border-radius: 50%;  display: flex;  justify-content: center;  align-items: center;  position: relative;')
+                    }else if(arr1[0] == 6){
+                        document.getElementById('circle').setAttribute('style',' margin:0 auto;margin-top:5rem;height: 25rem;width: 25rem;background: linear-gradient(#f676c9 0%, #cf51b0 10%, #d332be 50%, #760b64 100%);  border-radius: 50%;  display: flex;  justify-content: center;  align-items: center;  position: relative;')
                         
-            //         }else if(arr1[0] == 7){
-            //             document.getElementById('circle').setAttribute('style',' margin:0 auto;margin-top:5rem;height: 25rem;width: 25rem;background: linear-gradient(#494849 0%, #323132 10%, #1f1e1f 50%, #050505 100%);  border-radius: 50%;  display: flex;  justify-content: center;  align-items: center;  position: relative;')
+                    }else if(arr1[0] == 7){
+                        document.getElementById('circle').setAttribute('style',' margin:0 auto;margin-top:5rem;height: 25rem;width: 25rem;background: linear-gradient(#494849 0%, #323132 10%, #1f1e1f 50%, #050505 100%);  border-radius: 50%;  display: flex;  justify-content: center;  align-items: center;  position: relative;')
     
-            //         }
+                    }
         
-            //         arr1.splice(indexx, 1);
-            //         arr = arr1;
-            //     }
-            //         a = setTimeout(hide, 3000);  
-            //         counter = 3;           
-            // }
+                    arr1.splice(indexx, 1);
+                    arr = arr1;
+                }
+                    a = setTimeout(hide, 3000);  
+                    counter = 3;           
+            }
     
     
             function reset(){
-                len = 0;
                 endgame=1;
-                localStorage.setItem("endgame",1);
-                arr1 = shuffleArray([2, 3, 4, 5, 6, 7]);
-                localStorage.setItem("arr",JSON.stringify(arr1));
-                localStorage.setItem("picked",JSON.stringify([]));
+                arr = [2, 3, 4, 5, 6, 7]
                 picked = [];
-                document.getElementById("done").innerHTML="";
                 document.getElementById('end').style.display="none";
                 document.getElementById('reset').style.display="none";
                 
-              setTimeout(
-                  function() {
-                      document.getElementById('done').innerHTML=""
-                    
-                  }, 2000);
+                setTimeout(
+        function() {
+            document.getElementById('done').innerHTML=""
+          
+        }, 2000);
                 
                 document.getElementById('done').style.color="green"    
+                //document.getElementById('random').innerHTML = "0";
+                //document.getElementById('random').style.backgroundColor='grey'
                 document.getElementById('leng').innerHTML = "6 Colors Remaining";
                 document.getElementById('picked').innerHTML = " ";
                 i = 0;
-                len = 0;
+                len = 1;
             }
             function hide(){
                 document.getElementById('show').style.display="block";
                 document.getElementById('circle').setAttribute('style','margin:0 auto;margin-top:5rem;height: 25rem;width: 25rem;background: linear-gradient(#ffffff 0%, #ebebe7 10%, #d7d9d6 50%, #c6c6c3 100%);  border-radius: 50%;  display: flex;  justify-content: center;  align-items: center;  position: relative;')
-           }
+                // document.getElementById('innertext').innerHTML = " ";
+                // document.getElementById('random').style.backgroundColor='white'
+                // document.getElementById('ii').src="https://th.bing.com/th/id/R.b492a681dbf87b5cfe78040d5c908c69?rik=9Ae18mQbJJ%2fndg&riu=http%3a%2f%2fwww.snookerandpool.co.uk%2fphotos%2f1.704846white_cue_ball.jpg&ehk=2DDwTS%2fxqKXVnRyHxFcSlvZhjFWyezEw8bbVvuCTQj8%3d&risl=&pid=ImgRaw&r=0"
+            }
     
             function end(){
-              inputt=parseInt(prompt('Enter Passcode'))
-              if(inputt == 1010){
+                inputt=parseInt(prompt('Enter Passcode'))
+                if(inputt == 1010){
                 if(endgame == 1){
-                  endgame =0;
-                  document.getElementById('leng').style.display="none";
-                  localStorage.setItem("endgame",0);
-                  picked =localStorage.getItem("picked");
-                  document.getElementById('picked').innerHTML ="GAME FINISHED<br> "+picked;
-                  localStorage.setItem("picked",JSON.stringify([]));
-                  arr = [2, 3, 4, 5, 6, 7]
-                  picked = [];
-                  i = 0;
-                  len = 1;
+                    endgame =0;
+                document.getElementById('picked').innerHTML ="GAME FINISHED<br> [ "+ picked+" ]";
+    
+                arr = [2, 3, 4, 5, 6, 7]
+                picked = [];
+                i = 0;
+                len = 1;
                 }else{
                     alert('Game FINISHED --- Please Reset The game for New ')
                     endgame=0;
                 }
                 
-              }else{
+            }else{
                 alert('Enter correct Pass Code ')
-              }
+                }
             }
     
             function dot(){
@@ -640,55 +575,3 @@ footer{
     }
         </script>
 </HTML>
-=======
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="initial-scale=1, width=device-width" />
-    <link rel="stylesheet" href="./global.css" />
-    <link rel="stylesheet" href="./index.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Lao Sans Pro:wght@400&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Actor:wght@400&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Lavishly Yours:wght@400&display=swap"
-    />
-  </head>
-  <body>
-    <div class="property-1default-parent">
-      <div class="property-1default">
-        <div class="pending-wrapper">
-          <div class="pending">PENDING</div>
-        </div>
-        <div class="property-1default-inner">
-          <img class="frame-child" alt="" src="./public/undefined.png" />
-        </div>
-        <div class="paid-invoice-parent">
-          <div class="paid-invoice">PAID INVOICE</div>
-          <div class="pending-invoice">PENDING INVOICE</div>
-        </div>
-      </div>
-      <div class="property-1variant2">
-        <div class="paid-wrapper">
-          <div class="pending">PAID</div>
-        </div>
-        <div class="property-1variant2-inner">
-          <img class="frame-child" alt="" src="./public/undefined.png" />
-        </div>
-        <div class="paid-invoice-group">
-          <div class="paid-invoice">PAID INVOICE</div>
-          <div class="pending-invoice1">PENDING INVOICE</div>
-        </div>
-      </div>
-    </div>
-  </body>
-</html>
-
->>>>>>> Incoming
